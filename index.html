@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<title >SDC IISERB</title>
+	<link rel="shortcut icon" href="img/x.png" />
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/linecons.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			$('.res-nav_click').click(function() {
+				$('ul.toggle').slideToggle(600)
+			});
+
+			$(document).ready(function() {
+				$(window).bind('scroll', function() {
+					if ($(window).scrollTop() > 0) {
+						$('#header_outer').addClass('fixed');
+					} else {
+						$('#header_outer').removeClass('fixed');
+					}
+				});
+
+			});
+
+
+		});
+
+		function resizeText() {
+			var preferredWidth = 767;
+			var displayWidth = window.innerWidth;
+			var percentage = displayWidth / preferredWidth;
+			var fontsizetitle = 25;
+			var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+			$(".divclass").css("font-size", newFontSizeTitle)
+		}
+	</script>
+</head>
+
+<body>
+
+	<!--Header_section-->
+	<header id="header_outer">
+		<div class="container">
+			<div class="header_section">
+				<div class="logo"><a href="javascript:void(0)"><img src="img/logob.png" alt=""></div>
+				<nav class="nav" id="nav">
+					<ul class="toggle">
+						<li><a href="#top_content">Home</a></li>
+						<li><a href="#work_outer">Work</a></li>
+						<li><a href="#way">Clients</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+					<ul class="">
+						<li><a href="#top_content">CarMa</a></li>
+						<li><a href="#work_outer">Internships</a></li>
+						<li><a href="#way">Way To GO</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#contact">About</a></li>
+					</ul>
+				</nav>
+				<a class="res-nav_click animated wobble wow" href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
+		</div>
+	</header>
+	<!--Header_section-->
+
+	<!--Top_content-->
+	<section id="top_content" class="top_cont_outer">
+		<div class="top_cont_inner">
+			<div class="container">
+				<div class="top_content">
+					<div class="row">
+						<div class="col-lg-5 col-sm-7">
+							<div class="top_left_cont flipInY wow animated">
+								<div class="magzine"><a href="javascript:void(0)"><img src="img/carma.png" alt=""></a></div>
+								<h2>THE CAREER MAGAZINE</h2>
+								<p align="justify"> Once every semester, we reach out to IISER Bhopal alumni & faculty and try to dig out interesting ideas and perspectives. These ideas and perspectives are then distilled into wholesome articles for our very own CarMa. Want to know if that industrial summer internship would actually help your profile?
+									Read up! </p>
+								<a href="downloads.html" class="learn_more2" target="_blank">Download</a> </div>
+						</div>
+						<div class="col-lg-7 col-sm-5">
+							<a href="javascript:void(0)"><img src="img/bs.png" alt=""></a>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Top_content-->
+
+	<section id="work_outer">
+		<!--main-section-start-->
+		<div class="top_cont_latest">
+			<div class="container">
+				<div style = "position:relative; top:10 px;">
+				<div class="work_section">
+					<div class="row">
+						<div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
+							<div class="service-list">
+								<div class="service-list-col1"></div>
+								<div class="service-list-col2">
+									<h2>Internships</h2>
+									<p style = "font-family:comic,arial,helvetica;">
+										Eventually, we all run up against the inevitable wall of looking for an internship that fits our profile.
+									</p>
+									<p style = "font-family:comic,arial,helvetica;">
+										We have compiled a list of internships that you might be eligible for.
+									</p>
+									<p style = "font-family:comic,arial,helvetica;">
+										Alternatively, help us out by adding to the list!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-6 wow fadeInRight delay-05s">
+							<div class="service-list">
+								<div class="service-list-col1"></div>
+								<div class="service-list-col2">
+									<h2>Scholarships</h2>
+									<p style = "font-family:comic,arial,helvetica;">
+										A little financial backup always goes a long way in making life easier for a college student.
+									</p>
+									<p style = "font-family:comic,arial,helvetica;">
+										Find out if you are eligible for any of the scholarships listed here and help us expand the list!
+									</p>
+								</div>
+							</div>
+						</div>
+						<figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section class="main-section" id="way" >
+		<div class="client_area ">
+			<div class="client_section animated  fadeInUp wow">
+				<div class="client_profile">
+					<h2>Way to GO!</h2>
+					<h4>Every year in May our Quora account is flooded with numerous questions from anxious highschoolers regarding the </h4>
+					<h4>life at IISER Bhopal and how to get in here. We decided there needs to be a definitive guide to IISER from IISER. 					</h4>
+			<div class="clear"></div>
+			</div>
+			<div class="client_section animated  fadeInDown wow">
+				<div class="client_profile flt">
+
+					</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</section>
+	<!--main-section client-part-end-->
+
+	<div class="c-logo-part">
+		<!--c-logo-part-start-->
+		<div class="container">
+		</div>
+	</div>
+	<!--c-logo-part-end-->
+	<section class="main-section team" id="team">
+		<!--main-section team-start-->
+		<div class="container">
+			<h2>OUR Amazing Team</h2>
+			<div class="team-leader-block clearfix">
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-03s">
+						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+						<img src="img/team-leader-pic1.jpg" alt="">
+						<ul>
+							<li><a href="mailto: krishnap17@iiserb.ac.in" class="fa-twitter"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-03s">Krishna Prahlaadh Ramachandran</h3>
+					<span class="wow fadeInDown delay-03s">Secretary</span>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader  wow fadeInDown delay-06s">
+						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+						<img src="img/team-leader-pic2.jpg" alt="">
+						<ul>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-06s">Siddharth Bachoti</h3>
+					<span class="wow fadeInDown delay-06s">Vice-Secretary</span>
+
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+						<img src="img/team-leader-pic3.jpg" alt="">
+						<ul>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+							<li><a href="javascript:void(0)"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-09s">Dhawal K. Patil</h3>
+					<span class="wow fadeInDown delay-09s">Vice-Secretary</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--main-section team-end-->
+
+	<section class="twitter-feed">
+		<!--twitter-feed-->
+		<div class="container  animated fadeInDown delay-07s wow">
+			</div>
+	</section>
+	<!--twitter-feed-end-->
+	<footer class="footer_section" id="contact">
+		<div class="container">
+			<section class="main-section contact" id="contact">
+				<div class="contact_section">
+					<h2>About Us</h2
+					<div class="col-lg-6 wow fadeInLeft">
+						<div class="contact-info-box address clearfix">
+							<p align="justify"> The Student Development Council works in several areas related but not limited to career development, academics, social media outreach to school students, and alumni affairs - collectively termed as student development. We work closely with the Office of Alumni and International Relations (DAIR) as well as the Institute Career Development and Placement Council (ICDPC), in this regard.
+								<br><br>Do contact us (Email: <a href="mailto: sdc@iiserb.ac.in" class="fa-twitter">sdc@iiserb.ac.in</a>) if you have any queries regarding our work. We are also constantly on the lookout for dedicated volunteers interested in contributing to our efforts in establishing a culture of career development at IISERB. </p>
+					</div>
+
+	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			$('#header_outer').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+		});
+	</script>
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+		document.getElementById('').onclick = function() {
+			var section = document.createElement('section');
+			section.className = 'wow fadeInDown';
+			section.className = 'wow shake';
+			section.className = 'wow zoomIn';
+			section.className = 'wow lightSpeedIn';
+			this.parentNode.insertBefore(section, this);
+		};
+	</script>
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('a').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 91
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			// Portfolio Isotope
+			var container = $('#portfolio-wrap');
+
+
+			container.isotope({
+				animationEngine: 'best-available',
+				animationOptions: {
+					duration: 200,
+					queue: false
+				},
+				layoutMode: 'fitRows'
+			});
+
+			$('#filters a').click(function() {
+				$('#filters a').removeClass('active');
+				$(this).addClass('active');
+				var selector = $(this).attr('data-filter');
+				container.isotope({
+					filter: selector
+				});
+				setProjects();
+				return false;
+			});
+
+
+			function splitColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = 1;
+
+
+				if (winWidth > 1024) {
+					columnNumb = 4;
+				} else if (winWidth > 900) {
+					columnNumb = 2;
+				} else if (winWidth > 479) {
+					columnNumb = 2;
+				} else if (winWidth < 479) {
+					columnNumb = 1;
+				}
+
+				return columnNumb;
+			}
+
+			function setColumns() {
+				var winWidth = $(window).width(),
+					columnNumb = splitColumns(),
+					postWidth = Math.floor(winWidth / columnNumb);
+
+				container.find('.portfolio-item').each(function() {
+					$(this).css({
+						width: postWidth + 'px'
+					});
+				});
+			}
+
+			function setProjects() {
+				setColumns();
+				container.isotope('reLayout');
+			}
+
+			container.imagesLoaded(function() {
+				setColumns();
+			});
+
+
+			$(window).bind('resize', function() {
+				setProjects();
+			});
+
+		});
+		$(window).load(function() {
+			jQuery('#all').click();
+			return false;
+		});
+	</script>
+	<script src="contactform/contactform.js"></script>
+
+  <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
+</body>
+</html>

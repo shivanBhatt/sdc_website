@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Get turn.js</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width = 1150" />
+<link rel="icon" type="image/png" href="../pics/favicon.png" />
+<link type="text/css" rel="stylesheet" href="../css/default.css"></link>
+<link type="text/css" rel="stylesheet" href="../css/get.css"></link>
+<script type="text/javascript" src="../extras/jquery.min.1.7.js"></script>
+</head>
+<body>
+
+
+<div class="get-box">
+<div class="content order-box">
+
+<a class="small-turnjs" href="http://www.turnjs.com"></a>
+	<h1>Order</h1>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="order">
+	<label for="name">* Name</label> <br />
+	<input type="text" name="on6" id="name" size="30">  <br />
+
+	<label for="lastname">* Lastname</label> <br />
+	<input type="text" name="on1" id="lastname" size="30">  <br />
+
+	<label for="email">* Email</label> <br />
+	<input type="text"  name="on2" id="email" size="30">  <br />
+
+	<label for="company">Company Name</label><br />
+	<input type="text" name="on3" id="company" size="30">  <br />
+
+	<label for="website">* Website</label> <br />
+	<input type="text"  name="on4" id="website" size="30">  <br />
+
+	<input type="hidden" name="on5" value="5f890f648358e">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="DK2ALE5SFWWCG">
+	<input type="hidden" name="on0" value="License Type">* License Type <br />
+	<input type="hidden" name="notify_url" value="http://turnjs.com/paypal-checker">
+	<input type="hidden" name="return" value="http://turnjs.com/get/success/5f890f648358e">
+	<input type="hidden" name="cancel_return" value="http://turnjs.com/">
+	<select name="os0">
+		<option value="turn.js 4 - 5 domains">turn.js 4 - 5 domains $99.00 USD</option>
+		<option value="turn.js 4 - unlimited domains">turn.js 4 - unlimited domains $499.00 USD</option>
+		<option value="turn.js 3 - 5 domains">turn.js 3 - 5 domains $45.00 USD</option>
+		<option value="turn.js 3 - unlimited domains">turn.js 3 - unlimited domains $299.00 USD</option>
+	</select>
+
+<br />
+<br />
+
+
+
+<a class="classic-button pay-button">Buy Now</a>
+
+
+<input type="hidden" name="currency_code" value="USD">
+
+</form>
+</div>
+
+<script type="text/javascript">
+	$('.order').submit(function(e) {
+
+		var form = $(this);
+		var data = {
+			name: jQuery.trim(form.find('#name').val()),
+			lastname: jQuery.trim(form.find('#lastname').val()),
+			email: jQuery.trim(form.find('#email').val()),
+			company: jQuery.trim(form.find('#company').val()),
+			website: jQuery.trim(form.find('#website').val())
+		};
+
+		if (data.name=='') {
+
+			alert('Please insert your name');
+			form.find('#name').focus();
+			e.preventDefault();
+			return;
+
+		} else if (data.lastname=='') {
+
+			alert('Please insert your lastname');
+			form.find('#lastname').focus();
+			e.preventDefault();
+			return;
+
+
+		} else if (!/^[\.a-z0-9_-]+@[a-z0-9_-]{2,}(\.[a-z0-9_-]{2,})+$/i.test(data.email)) {
+
+			alert('Please insert your email');
+			form.find('#email').focus();
+			e.preventDefault();
+			return;
+
+		} else if (data.website=='' || !/([a-z0-9_-]+\.[a-z0-9_-]{2,})+/i.test(data.website)) {
+
+			alert('Please insert your website');
+			form.find('#website').focus();
+			e.preventDefault();
+			return;
+
+		} else if (data.company=='') {
+
+			form.find('#company').val('-');
+
+		}
+
+	});
+
+	$('.order .classic-button').click(function() {
+		$('.order').submit();
+	});
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28960832-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

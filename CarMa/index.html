@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="noie"> <!--<![endif]-->
+<head>
+<title>SDC CarMa's</title>
+<meta name="viewport" content="width=1200" />
+<meta name="keywords" content="page,flip,pages,effect,flipbook,flipboard,jquery,html5,book,magazine,newspaper,ipad,iphone,android,ios" />
+<meta name="description" content="Carma" />
+<link rel="icon" type="image/png" href="pics/x.png" />
+<link type="text/css" rel="stylesheet" href="css/jquery.ui.css"></link>
+<link type="text/css" rel="stylesheet" href="css/default.css"></link>
+<script type="text/javascript" src="extras/all.js"></script>
+<script type="text/javascript" src="lib/hash.js"></script>
+<script type="text/javascript" src="lib/turn.min.js"></script>
+<script type="text/javascript" src="lib/zoom.min.js"></script>
+<script type="text/javascript" src="lib/bookshelf.js"></script>
+</head>
+<body>
+
+<div class="splash">
+	<div class="center">
+	<div class="details">
+
+		<h1>Read the Career magzine here.</h1>
+		<div class="options">
+			<p><i></i> <a href="https://shiro-yaksha.github.io/sdc_website/">Go to SDC website</a> </p>
+		</div>
+	</div>
+
+	<div class="bookshelf">
+		<div class="shelf">
+			<div class="row-1">
+				<div class="loc">
+					<div> <div class="sample thumb1" sample="2017">  </div> <a href="Blogs/2017/index.html" class="get-now">2017</a></div>
+
+					<div> <div class="sample thumb2" sample="2018"></div>  <a href="Blogs/2018/index.html" class="get-now">2018</a></div>
+
+					<div> <div class="sample thumb3" sample="2019"></div>  <a href="Blogs/2019/index.html" class="get-now">2019</a></div>
+				</div>
+			</div>
+			<div class="row-2">
+				<div class="loc">
+					<div> <div class="sample thumb4" sample="2020"></div> <a href="Blogs/2020/index.html" class="get-now">2020</a> </div>
+					<div> <div class="sample thumb5" sample="2020 Fall"></div> <a href="Blogs/Dec20.pdf" class="get-now" target="_blank">2020 Fall</a> </div>
+					<div> <div class="sample thumb6" sample="magazine3"></div> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+
+//1953 360
+
+yepnope({
+	test : Modernizr.csstransforms,
+	nope : ['lib/turn.html4.min.js', 'css/jquery.ui.html4.css']
+});
+
+$('#sample-viewer a').click(function() {
+	$(this).hide();
+	yepnope({
+		test : Modernizr.csstransforms,
+		load: ['samples/basic/js/basic.js', 'samples/basic/css/basic.css'],
+		nope: 'samples/basic/css/basic.html4.css?'+Math.round(Math.random()*100)
+	});
+});
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-28960832-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</body>
+</html>

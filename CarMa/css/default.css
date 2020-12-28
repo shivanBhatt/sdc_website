@@ -222,7 +222,7 @@ li{
 	height:700px;
 	overflow:hidden;
 	position:relative;
-	background:url(../pics/splash-bg.jpg) bottom left repeat-x;
+	background-color: rgb(217, 221, 220);
 
 	-webkit-transition:height 1s;
 	-moz-transition:height 1s;

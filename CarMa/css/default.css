@@ -222,7 +222,6 @@ li{
 	height:700px;
 	overflow:hidden;
 	position:relative;
-	background-color: rgb(217, 221, 220);
 
 	-webkit-transition:height 1s;
 	-moz-transition:height 1s;
@@ -262,18 +261,7 @@ li{
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-.turnjs{
-	background:no-repeat url(../pics/turnjs-letters.png);
-	width:220px;
-	height:82px;
-	display:inline-block;
-	margin-left:-2px;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-ms-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-}
+
 
 .small-turnjs{
 	background:url(../pics/small-turnjs-letters.png);
@@ -701,7 +689,12 @@ li{
 	width:97px;
 	height:125px;
 }
-
+.bookshelf .thumb6,
+.bookshelf-row .thumb6{
+	background-image:url(../pics/book6.jpg);
+	width:97px;
+	height:125px;
+}
 footer{
 	font:14px 'District Thin', helvetica, arial;
 	line-height:100px;

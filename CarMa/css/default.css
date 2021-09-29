@@ -550,7 +550,9 @@ li{
 }
 
 .bookshelf .shelf .row-1:after,
-.bookshelf .shelf .row-2:after{
+.bookshelf .shelf .row-2:after,
+.bookshelf .shelf .row-3:after
+{
 	background:url(../pics/wall-bookshelf.png);
 	background-size:100%;
 	background-repeat: no-repeat;
@@ -571,6 +573,18 @@ li{
 }
 
 .bookshelf .shelf .row-2:after{
+	height:216px;
+}
+
+.bookshelf .shelf .row-3{
+	position:relative;
+	margin-top:20px;
+	height:164px;
+	width:360px;
+	margin-left:33px;
+}
+
+.bookshelf .shelf .row-3:after{
 	height:216px;
 }
 
@@ -692,6 +706,12 @@ li{
 .bookshelf .thumb6,
 .bookshelf-row .thumb6{
 	background-image:url(../pics/book6.jpg);
+	width:97px;
+	height:125px;
+}
+.bookshelf .thumb7,
+.bookshelf-row .thumb7{
+	background-image:url(../pics/book7.jpg);
 	width:97px;
 	height:125px;
 }
